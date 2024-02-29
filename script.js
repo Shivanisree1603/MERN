@@ -8,7 +8,7 @@ function addTask(){
 
     var totalCount =document.getElementById('task-list').childElementCount
 
-    if (task.trim()!=='') //Avoid empty string in task list
+    if (task.trim()!=='') { //Avoid empty string in task list
     
 
     totalTask.textContent = totalCount + 1
@@ -44,7 +44,7 @@ function addTask(){
         
         totalTask.textContent = taskCount
     })
-    
+    }
     taskItem.appendChild(deleteButton)
     //document.getElementById('task-list').appendChild(taskItem) 
     
